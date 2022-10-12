@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="FirebaseAdmin" Version="2.2.0" />
+		<PackageReference Include="FluentEmail.Smtp" Version="3.0.0" />
+		<PackageReference Include="FluentEmail.SendGrid" Version="3.0.0" />
+		<PackageReference Include="FluentEmail.Core" Version="3.0.0" />
+		<PackageReference Include="FluentEmail.Razor" Version="3.0.0" />
+		<PackageReference Include="ClosedXML" Version="0.95.4" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+		<PackageReference Include="EPPlus" Version="4.5.3.3" />
+		<PackageReference Include="Json.Net" Version="1.0.33" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Extensions\" />
+		<Folder Include="ViewModels\" />
+		<Folder Include="Hubs\" />
+		<Folder Include="HttpClients\" />
+		<Folder Include="Paystack\" />
+		<Folder Include="Paystack\Common\" />
+		<Folder Include="Paystack\Transactions\" />
+		<Folder Include="Paystack\TransferRecipients\" />
+		<Folder Include="Paystack\FundsTransfer\" />
+		<Folder Include="Paystack\SubAccounts\" />
+		<Folder Include="Attributes\" />
+		<Folder Include="Paystack\Misc\" />
+		<Folder Include="Paystack\Verification\" />
+		<Folder Include="Mono\" />
+		<Folder Include="Mono\Common\" />
+		<Folder Include="Interswitch\" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Spine.Data\Spine.Data.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="EmailTemplates\AcceptInvite.cshtml" />
+		<None Remove="EmailTemplates\ConfirmAccount.cshtml" />
+		<None Remove="EmailTemplates\LoginOTP.cshtml" />
+		<None Remove="EmailTemplates\Notification.cshtml" />
+		<None Remove="EmailTemplates\ResetPassword.cshtml" />
+		<None Remove="ClosedXML" />
+		<None Remove="EmailTemplates\SendInvoice.cshtml" />
+		<None Remove="EmailTemplates\Signup.cshtml" />
+		<None Remove="EmailTemplates\SubscrberPaymentNotification.cshtml" />
+		<None Remove="EmailTemplates\SubscriberSignup.cshtml" />
+		<None Remove="EmailTemplates\SubscriptionReminder.cshtml" />
+		<None Remove="EmailTemplates\UserSignup.cshtml" />
+		<None Remove="EmailTemplates\WelcomeMessage.cshtml" />
+		<None Remove="Microsoft.AspNetCore.SignalR" />
+		<None Remove="ViewModels\" />
+		<None Remove="Hubs\" />
+		<None Remove="HttpClients\" />
+		<None Remove="Paystack\" />
+		<None Remove="Paystack\Common\" />
+		<None Remove="Paystack\Transactions\" />
+		<None Remove="Paystack\TransferRecipients\" />
+		<None Remove="Paystack\FundsTransfer\" />
+		<None Remove="Paystack\SubAccounts\" />
+		<None Remove="Attributes\" />
+		<None Remove="Paystack\Misc\" />
+		<None Remove="Paystack\Verification\" />
+		<None Remove="Mono\" />
+		<None Remove="Mono\Common\" />
+		<None Remove="EPPlus" />
+		<None Remove="Json.Net" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="EmailTemplates\AcceptInvite.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="EmailTemplates\UserSignup.cshtml" />
+		<EmbeddedResource Include="EmailTemplates\SubscriberSignup.cshtml" />
+		<EmbeddedResource Include="EmailTemplates\SubscriptionReminder.cshtml" />
+		<EmbeddedResource Include="EmailTemplates\SubscrberPaymentNotification.cshtml" />
+		<EmbeddedResource Include="EmailTemplates\LoginOTP.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="EmailTemplates\ResetPassword.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="EmailTemplates\ConfirmAccount.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="EmailTemplates\InvoiceReminder.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="EmailTemplates\SendInvoice.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="EmailTemplates\CustomerReminder.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="EmailTemplates\ConfirmAccountReminder.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="EmailTemplates\Notification.cshtml" />
+		<EmbeddedResource Include="EmailTemplates\Signup.cshtml" />
+		<EmbeddedResource Include="EmailTemplates\WelcomeMessage.cshtml" />
+		<EmbeddedResource Include="EmailTemplates\LowStock.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="EmailTemplates\SendPurchaseOrder.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="EmailTemplates\TransactionReminder.cshtml">
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+	</ItemGroup>
+</Project>

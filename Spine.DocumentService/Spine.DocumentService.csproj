@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+	<PropertyGroup>
+		<!-- Make sure documentation XML is also included when publishing (not only when testing)
+    see https://github.com/Azure/service-fabric-issues/issues/190
+    -->
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>bin\Debug\Spine.DocumentService.xml</DocumentationFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="5.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.10">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.5" />
+		
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.9" />
+		<PackageReference Include="NLog.Web.AspNetCore" Version="4.13.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Spine.Common\Spine.Common.csproj">
+			<GlobalPropertiesToRemove>
+			</GlobalPropertiesToRemove>
+		</ProjectReference>
+		<ProjectReference Include="..\Spine.Data.Documents\Spine.Data.Documents.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="NLog.Web.AspNetCore" />
+	</ItemGroup>
+</Project>

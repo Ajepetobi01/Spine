@@ -1,0 +1,33 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/weatherforecast",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 60018
+        }
+      ],
+      "UpstreamPathTemplate": "/accounts/weatherforecast",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/weatherforecast",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 40434
+        }
+      ],
+      "UpstreamPathTemplate": "/customers/weatherforecast",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:64861",
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+}

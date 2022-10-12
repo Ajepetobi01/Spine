@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Spine.Common\Spine.Common.csproj" />
+    <ProjectReference Include="..\Spine.Services\Spine.Services.csproj" />
+    <ProjectReference Include="..\Spine.Data\Spine.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="NLog" Version="4.7.10" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.12" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Commands\" />
+    <Folder Include="MappingProfiles\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="NLog" />
+    <None Remove="System.Linq.Dynamic.Core" />
+  </ItemGroup>
+</Project>

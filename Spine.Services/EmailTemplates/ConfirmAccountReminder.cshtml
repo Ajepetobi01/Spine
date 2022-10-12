@@ -1,0 +1,16 @@
+﻿@model Spine.Services.EmailTemplates.Models.ConfirmAccountReminder
+@{
+}
+
+Hello @Model.Name.Trim(),
+<br />
+
+<p>
+    Your new business account on @Model.AppName has  not been verified.
+    <br />
+
+    Your account will be disabled on @Model.Date <br />
+
+    Kindly <a href="@Model.ActionLink" target="_blank"> confirm your business account </a>
+
+</p>

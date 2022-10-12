@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Remove="Microsoft.EntityFrameworkCore" />
+		<None Remove="Microsoft.EntityFrameworkCore.Design" />
+		<None Remove="Microsoft.EntityFrameworkCore.Tools" />
+		<None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+		<None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+		<None Remove="Entities\" />
+		<None Remove="Helpers\" />
+		<None Remove="Migrations\" />
+		<None Remove="Entities\Invoice\" />
+		<None Remove="Entities\Transactions\" />
+		<None Remove="Entities\BillsPayments\" />
+		<None Remove="Entities\Accounts\" />
+		<None Remove="Entities\Company\" />
+		<None Remove="Entities\Inventories\" />
+		<None Remove="Entities\Customer\" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.9">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.9">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.9" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.9" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Spine.Common\Spine.Common.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Helpers\" />
+		<Folder Include="Entities\Invoices\" />
+		<Folder Include="Entities\Transactions\" />
+		<Folder Include="Entities\BillsPayments\" />
+		<Folder Include="Entities\Accounts\" />
+		<Folder Include="Entities\Company\" />
+		<Folder Include="Entities\Inventories\" />
+		<Folder Include="Entities\Customer\" />
+	</ItemGroup>
+</Project>

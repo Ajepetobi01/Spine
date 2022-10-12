@@ -1,0 +1,114 @@
+﻿[
+  {
+    "BankName": "Access Bank",
+    "BankCode": "044"
+  },
+  {
+    "BankName": "Access Bank (Diamond)",
+    "BankCode": "063"
+  },
+  {
+    "BankName": "ALAT by WEMA",
+    "BankCode": "035A"
+  },
+  {
+    "BankName": "ASO Savings and Loans",
+    "BankCode": "401"
+  },
+  {
+    "BankName": "Citibank Nigeria",
+    "BankCode": "023"
+  },
+  {
+    "BankName": "Ecobank Bank Nigeria",
+    "BankCode": "050"
+  },
+  {
+    "BankName": "Ekondo Microfinance Bank",
+    "BankCode": "562"
+  },
+  {
+    "BankName": "Enterprise Bank",
+    "BankCode": "084"
+  },
+  {
+    "BankName": "Fidelity Bank",
+    "BankCode": "070"
+  },
+  {
+    "BankName": "First Bank of Nigeria",
+    "BankCode": "011"
+  },
+  {
+    "BankName": "First City Monument Bank",
+    "BankCode": "214"
+  },
+  {
+    "BankName": "Guaranty Trust Bank",
+    "BankCode": "058"
+  },
+  {
+    "BankName": "Heritage Bank",
+    "BankCode": "030"
+  },
+  {
+    "BankName": "Jaiz Bank",
+    "BankCode": "301"
+  },
+  {
+    "BankName": "Keystone Bank",
+    "BankCode": "082"
+  },
+  {
+    "BankName": "MainStreet Bank",
+    "BankCode": "014"
+  },
+  {
+    "BankName": "Parallex Bank",
+    "BankCode": "526"
+  },
+  {
+    "BankName": "Polaris Bank",
+    "BankCode": "076"
+  },
+  {
+    "BankName": "Providus Bank",
+    "BankCode": "101"
+  },
+  {
+    "BankName": "Stanbic IBTC Bank",
+    "BankCode": "221"
+  },
+  {
+    "BankName": "Standard Chartered Bank",
+    "BankCode": "068"
+  },
+  {
+    "BankName": "Sterling Bank",
+    "BankCode": "232"
+  },
+  {
+    "BankName": "Suntrust Bank",
+    "BankCode": "100"
+  },
+  {
+    "BankName": "Union Bank of Nigeria",
+    "BankCode": "032"
+  },
+  {
+    "BankName": "United Bank for Africa",
+    "BankCode": "033"
+  },
+  {
+    "BankName": "Unity Bank",
+    "BankCode": "215"
+  },
+  {
+    "BankName": "Wema Bank",
+    "BankCode": "035"
+  },
+  {
+    "BankName": "Zenith Bank",
+    "BankCode": "057"
+  }
+]

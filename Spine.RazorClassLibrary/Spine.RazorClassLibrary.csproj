@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  
+
+
+  <ItemGroup>
+    <None Remove="Views\" />
+    <None Remove="Views\Shared\" />
+    <None Remove="Views\Emails\" />
+    <None Remove="Views\Prints\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Views\Shared\" />
+    <Folder Include="Views\Emails\" />
+    <Folder Include="Views\Prints\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Spine.Common\Spine.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="wwwroot\css\bootstrap.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\css\fontawesome.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\js\bootstrap.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\js\jquery.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\js\popper.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

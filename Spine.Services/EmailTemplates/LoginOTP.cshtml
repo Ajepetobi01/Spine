@@ -1,0 +1,14 @@
+﻿@model Spine.Services.EmailTemplates.Models.TwoFactorAuthentication
+@{
+}
+
+Hello @Model.Name.Trim(),
+<br />
+
+There is a login attempt on your account on @Model.AppName at @Model.Date.
+<br />
+
+Your OTP is <strong>@Model.OTP</strong>.
+<br />
+
+If you did not attempt this, please reset your password.

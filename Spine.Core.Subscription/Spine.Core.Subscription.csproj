@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Spine.Data\Spine.Data.csproj" />
+    <ProjectReference Include="..\Spine.Services\Spine.Services.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+.vs
+*/obj
+*/bin
+*/Properties/launchSettings.json
+*/Properties/PublishProfiles
+*/internal-nlog-AspNetCore.txt
+.idea

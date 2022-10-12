@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+	<PropertyGroup>
+		<RestoreSources>$(RestoreSources);..\packages;https://api.nuget.org/v3/index.json</RestoreSources>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Spine.Data.Documents\Spine.Data.Documents.csproj" />
+		<ProjectReference Include="..\Spine.Data\Spine.Data.csproj" />
+		<ProjectReference Include="..\Spine.Services\Spine.Services.csproj" />
+		<ProjectReference Include="..\Spine.PdfGenerator\Spine.PdfGenerator.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Remove="MediatR" />
+		<None Remove="AutoMapper" />
+		<None Remove="Commands\" />
+		<None Remove="Queries\" />
+		<None Remove="MappingProfiles\" />
+		<None Remove="Helpers\" />
+		<None Remove="ExcelCsvExport" />
+		<None Remove="Hangfire" />
+		<None Remove="Jobs\" />
+		<None Remove="NReco.PdfGenerator.LT" />
+		<None Remove="System.Linq.Dynamic.Core" />
+		<None Remove="NLog" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="MediatR" Version="9.0.0" />
+		<PackageReference Include="AutoMapper" Version="10.1.1" />
+		<!--<PackageReference Include="ExcelCsvExport" Version="2.0.2" />-->
+		<PackageReference Include="Hangfire" Version="1.7.24" />
+		<PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.12" />
+		<PackageReference Include="NLog" Version="4.7.10" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Commands\" />
+		<Folder Include="Queries\" />
+		<Folder Include="MappingProfiles\" />
+		<Folder Include="Helpers\" />
+		<Folder Include="Jobs\" />
+	</ItemGroup>
+</Project>

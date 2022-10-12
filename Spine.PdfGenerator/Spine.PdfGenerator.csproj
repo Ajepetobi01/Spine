@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Remove="PuppeteerSharp" />
+		<None Remove="RazorEngine" />
+		<None Remove="RazorEngine.NetCore" />
+		<None Remove="Templates\SendInvoice.cshtml" />
+		<None Remove="Templates\Invoice %28copy%29.cshtml" />
+		<None Remove="Microsoft.AspNetCore.Razor" />
+		<None Remove="Microsoft.AspNetCore.Mvc.Razor.Extensions" />
+		<None Remove="RazorEngineCore" />
+		<None Remove="NReco.PdfGenerator.LT" />
+		<None Remove="Select.HtmlToPdf.NetCore" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="NReco.PdfGenerator.LT" Version="1.1.17" />
+		<PackageReference Include="Select.HtmlToPdf.NetCore" Version="21.1.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Spine.Common\Spine.Common.csproj" />
+		<ProjectReference Include="..\Spine.RazorClassLibrary\Spine.RazorClassLibrary.csproj" />
+	</ItemGroup>
+</Project>

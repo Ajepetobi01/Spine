@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Hangfire" Version="1.7.24" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Spine.Data\Spine.Data.csproj" />
+    <ProjectReference Include="..\Spine.Services\Spine.Services.csproj" />
+  </ItemGroup>
+
+</Project>
